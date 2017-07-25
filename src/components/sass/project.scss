@@ -1,0 +1,105 @@
+@import '../../assets/sass/components/variables';
+@import '../../assets/sass/components/mixin';
+
+.project {
+  background: $back;
+  .project_wrap {
+    &:hover {
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.13);
+    }
+    @include reset-elNav(390px);
+    width: 360px;
+    padding: 0;
+    margin: 0 30px 30px 0 !important;
+    &:nth-of-type(3n) {
+      margin-right: 0 !important;
+    }
+    height: 390px !important;
+    .seeDetailsWrap {
+      display: flex;
+      p {
+        margin: 20px 0;
+        flex: 1;
+        text-align: left;
+        font-size: 12px;
+        color: $Introduction;
+        line-height: 20px;
+        span {
+          font-size: 24px;
+          color: $viceColor;
+          line-height:33px;
+        }
+      }
+      .seeDetails {
+        margin: 30px 0;
+        width: 120px;
+        @include masterButton(40px !important);
+        line-height: 40px;
+      }
+
+    }
+    .img_wrap {
+      width: 100%;
+      height: 210px;
+      position: relative;
+      p {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 80px;
+        height: 38px;
+        background: $masterColor;
+        border-radius: 0 0 19px 0;
+        font-size: 14px;
+        color: #fff;
+        line-height: 38px;
+        text-align: center;
+        font-weight: 400;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+      }
+      span {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        font-size: 14px;
+        line-height: 20px;
+        color: #fff;
+        text-shadow: 0 1px 1px #000;
+      }
+    }
+    .Introduction {
+      width: 100%;
+      height: 180px;
+      box-sizing: border-box;
+      padding: 0 19px;
+      border: 1px solid #e1e1e1;
+      h3 {
+        font-size: 18px;
+        font-weight: bold;
+        height: 40px;
+        line-height: 40px;
+        overflow: hidden;
+      }
+      //p {
+      //  font-size: 14px;
+      //  height: 40px;
+      //  line-height: 20px;
+      //  overflow: hidden;
+      //  color: $Introduction;
+      //  @include text-overflow();
+      //}
+      h6 {
+        font-size: 12px;
+        line-height: 25px;
+        height: 25px;
+        font-weight: 400;
+        span {
+          color: $viceColor;
+        }
+      }
+    }
+  }
+}

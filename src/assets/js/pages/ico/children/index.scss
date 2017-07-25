@@ -1,0 +1,403 @@
+@import '../../../../sass/components/variables';
+@import '../../../../sass/components/mixin';
+
+#icoChildrenMain {
+  @include Width();
+  overflow: hidden;
+  margin: 30px auto;
+  .icoDetails {
+    float: left;
+    width: 800px;
+    box-sizing: border-box;
+    padding: 20px 40px 40px;
+    background: #fff;
+    overflow: hidden;
+    & > p {
+      font-size: 16px;
+      color: $mainColor;
+      a {
+        color: $viceColor;
+        font-size: 16px;
+      }
+    }
+    & > h2 {
+      font-size: 24px;
+      color: $mainColor;
+      text-align: center;
+      line-height: 64px;
+      height: 54px;
+    }
+    & > span {
+      display: block;
+      line-height: 17px;
+      color: $Introduction;
+      text-align: center;
+    }
+    & > table {
+      margin-top: 40px;
+      width: 100%;
+      color: $Introduction;
+      tr {
+        line-height: 50px;
+        text-indent: 20px;
+      }
+      thead {
+        tr {
+          text-align: left;
+          background: #f9f9f9;
+          line-height: 40px;
+        }
+      }
+      th, td {
+        border: 1px solid #e0e0e0;
+        font-size: 14px;
+        font-weight: 400;
+      }
+      td {
+        span {
+          float: right;
+          line-height: 50px;
+          color: $mainColor;
+          margin-right: 20px;
+        }
+      }
+    }
+    & > h3 {
+      height: 53px;
+      line-height: 63px;
+      font-size: 18px;
+      color: $masterColor;
+      border-bottom: 1px solid #e0e0e0;
+    }
+    & > div {
+      min-height: 800px;
+      padding: 0 10px;
+      /*恢复元素内默认浏览器样式*/
+      p {
+        display: block;
+        -webkit-margin-before: 1em;
+        -webkit-margin-after: 1em;
+        -webkit-margin-start: 0px;
+        -webkit-margin-end: 0px;
+        line-height: 1.12
+      }
+      address, blockquote, body, dd, div, dl, dt, fieldset, form, frame, frameset, h1, h2, h3, h4, h5, h6, noframes, ol, p, ul, hr, menu, pre {
+        display: block
+      }
+      /*以上列表元素默认状态下一块状显示，未显示的将以内联元素显示，该列表针对HTML4版本，部分元素在XHTML1中将废弃*/
+      li {
+        display: list-item
+      }
+      /*默认以列表显示*/
+      head {
+        display: none
+      }
+      /*默认不显示*/
+      table {
+        display: table
+      }
+      /*默认为表格显示*/
+      tr {
+        display: table-row
+      }
+      /*默认为表格行显示*/
+      h1 {
+        font-size: 2em;
+        margin: .67em 0
+      }
+      h2 {
+        font-size: 1.5em;
+        margin: .75em 0
+      }
+      h3 {
+        font-size: 1.17em;
+        margin: .83em 0
+      }
+      h4, p, blockquote, ul, fieldset, form, ol, dl, menu {
+        margin: 1.12em 0
+      }
+      h5 {
+        font-size: .83em;
+        margin: 1.5em 0
+      }
+      h6 {
+        font-size: .75em;
+        margin: 1.67em 0
+      }
+      h1, h2, h3, h4, h5, h6, b, strong {
+        font-weight: bolder
+      }
+      thead {
+        display: table-header-group
+      }
+      /*默认为表格头部分组显示*/
+      tbody {
+        display: table-row-group
+      }
+      /*默认为表格行分组显示*/
+      th {
+        font-weight: bolder;
+        text-align: center
+      }
+      /*默认为表格标题显示，呈现加粗居中状态*/
+      td, th {
+        display: table-cell;
+      }
+      /*默认为单元格显示*/
+      tfoot {
+        display: table-footer-group
+      }
+      /*默认为表格底部分组显示*/
+      col {
+        display: table-column
+      }
+      /*默认为表格列显示*/
+      colgroup {
+        display: table-column-group
+      }
+      /*默认为表格列分组显示*/
+      caption {
+        display: table-caption
+      }
+      /*默认为表格标题显示*/
+      caption {
+        text-align: center
+      }
+      /*默认为表格标题显示，呈现居中状态*/
+      i, cite, em, var, address {
+        font-style: italic
+      }
+      big {
+        font-size: 1.17em
+      }
+      sub {
+        vertical-align: sub
+      }
+      /*定义sub元素默认为下标显示*/
+      sup {
+        vertical-align: super
+      }
+      /*定义sub元素默认为上标显示*/
+      blockquote {
+        margin-left: 40px;
+        margin-right: 40px
+      }
+      pre, tt, code, kbd, samp {
+        font-family: monospace
+      }
+      pre {
+        white-space: pre
+      }
+      button, textarea, input, object, select {
+        display: inline-block;
+      }
+      small, sub, sup {
+        font-size: .83em
+      }
+      table {
+        border-spacing: 2px;
+      }
+      thead, tbody, tfoot {
+        vertical-align: middle
+      }
+      /*定义表头、主体表、表脚元素默认为垂直对齐*/
+      td, th {
+        vertical-align: inherit
+      }
+      /*定义单元格、列标题默认为垂直对齐默认为继承*/
+      /* s, strike, del { text-decoration: line-through }*//*定义这些元素默认为删除线显示*/
+      hr {
+        border: 1px inset
+      }
+      /*定义分割线默认为1px宽的3D凹边效果*/
+      /* ol, ul, dir, menu, dd { margin-left: 40px }*/
+      ol {
+        list-style-type: decimal
+      }
+      a {
+        color: #0000EE;
+        text-decoration: none;
+      }
+    }
+  }
+  .icoUser {
+    float: right;
+    width: 320px;
+    .coin {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 30px;
+      background: #fff;
+      overflow: hidden;
+      .coinIntroduction {
+        position: relative;
+        overflow: hidden;
+        img {
+          float: left;
+          width: 70px;
+          height: 70px;
+          border-radius: 50%;
+        }
+        .coinName {
+          width: 139px;
+          float: left;
+          font-size: 18px;
+          color: $mainColor;
+          line-height: 70px;
+          text-indent: 12px;
+          overflow: hidden;
+          text-overflow-ellipsis: ellipsis;
+          white-space: normal;
+          span {
+            margin-left: 3px;
+            font-size: 14px;
+            color: $Introduction;
+          }
+        }
+        i {
+          position: absolute;
+          display: inline-block;
+          top: 20px;
+          right: 0;
+          box-sizing: border-box;
+          height: 25px;
+          line-height: 25px;
+          text-align: center;
+          color: $viceColor;
+          border: 1px solid $viceColor;
+          padding: 0 6px;
+        }
+      }
+      & > h6 {
+        line-height: 17px;
+        color: $mainColor;
+        margin-top: 20px;
+        font-weight: 400;
+        span {
+          color: $viceColor;
+        }
+      }
+      .el-progress-bar__inner {
+        background: $masterColor;
+      }
+      & > .aims {
+        margin-top: 20px;
+        display: flex;
+        p {
+          flex: 1;
+          line-height: 1;
+          color: $Introduction;
+          text-align: center;
+          span {
+            color: $viceColor;
+            font-size: 24px;
+          }
+          i {
+            font-size: 14px;
+            font-weight: 400;
+            font-style: normal;
+            color: $mainColor;
+          }
+        }
+      }
+    }
+    .trad {
+      width: 320px;
+      height: 458px;
+      margin-top: 20px;
+      background: #fff;
+      box-sizing: border-box;
+      padding: 30px;
+      & > p, & > label > span {
+        font-size: 14px;
+        color: $Introduction;
+      }
+      p {
+        line-height: 20px;
+        margin-bottom: 28px;
+        &:first-of-type {
+          margin-bottom: 36px;
+        }
+        i {
+          font-style: normal;
+          font-size: 24px;
+          color: $viceColor;
+        }
+        b {
+          color: $viceColor;
+        }
+        span {
+          color: $mainColor;
+        }
+      }
+      label {
+        display: block;
+        height: 56px;
+        span {
+          float: left;
+          line-height: 36px;
+        }
+        input {
+          float: left;
+          box-sizing: border-box;
+          width: 190px;
+          height: 36px;
+          padding: 10px;
+        }
+      }
+      button {
+        @include masterButton(50px, 70px);
+        width: 220px;
+        margin: 30px auto 0;
+      }
+      a {
+        display: block;
+        text-align: center;
+        line-height: 37px;
+        height: 37px;
+        font-szie: 14px;
+        color: $viceColor;
+      }
+    }
+    .login {
+      width: 320px;
+      height: 514px;
+      box-sizing: border-box;
+      background: #fff;
+      padding: 162px 50px 152px;
+      margin-top: 30px;
+      & > div {
+        overflow: hidden;
+        margin-bottom: 63px;
+        .no-login {
+          float: left;
+          width: 50px;
+          height: 50px;
+          background: url("/static/img/no-login.png") center;
+          background-size: 50px;
+        }
+        p {
+          float: left;
+          width: 140px;
+          text-indent: 14px;
+          font-size: 18px;
+          line-height: 50px;
+        }
+      }
+      .loginUp {
+        @include masterButton(50px, 70px);
+        width: 220px;
+        line-height: 50px;
+        margin: 0 auto;
+      }
+      .registered {
+        margin-bottom: 30px;
+        display: block;
+        text-align: center;
+        line-height: 37px;
+        color: $viceColor;
+        font-size: 14px;
+      }
+    }
+  }
+}

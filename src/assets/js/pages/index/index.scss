@@ -1,0 +1,235 @@
+@import '../../../sass/components/variables';
+@import '../../../sass/components/mixin';
+
+#main {
+  @include minWidth($back);
+  .el-carousel__item h3 {
+    color: #fff;
+    font-size: 40px;
+    opacity: 0.75;
+    line-height: 450px;
+    margin: 0;
+    text-align: center;
+  }
+
+  .el-carousel__item:nth-child(2n) {
+    background-color: $masterColor;
+  }
+
+  .el-carousel__item:nth-child(2n+1) {
+    background-color: $viceColor;
+  }
+
+  .el-carousel__indicators--outside {
+    display: none;
+  }
+  .newAnnouncement {
+    li {
+      @include reset-elNav(50px, #fff, $mainColor);
+      text-align: center;
+      span {
+        color: $viceColor;
+      }
+    }
+  }
+  .indexWrap {
+    @include Width();
+    h2 {
+      font-size: 14px;
+      color: $masterColor;
+      line-height: 20px;
+      border-left: 5px solid $masterColor;
+      text-indent: 13px;
+      font-weight: bold;
+      margin: 30px auto 8px;
+      &.transactionTitle {
+        margin-top: 0;
+      }
+    }
+  }
+  .bg-transaction {
+    width: 1140px;
+    height: 330px;
+    background: url('../../../images/sprites.png') -10px -10px;
+    p {
+      width: 1020px;
+      height: 54px;
+      line-height: 54px;
+      text-align: right;
+      font-size: 24px;
+      font-weight: 400;
+      span {
+        font-size: 36px;
+        color: $masterColor;
+      }
+    }
+    .transactionFrequency {
+      padding-top: 48px;
+    }
+    .transactionTotal {
+      padding-top: 3px;
+    }
+    .transaction {
+      float: right;
+      width: 120px;
+      line-height: 40px;
+      margin: 67px 121px 0 0;
+      @include masterButton();
+    }
+  }
+  .newsWrap {
+    height: 388px;
+    & > div {
+      width: 560px;
+      height: 358px;
+      &:first-of-type {
+        float: left;
+        ul {
+          height: 330px - 8px - 9px;
+          padding: 8px 0 9px;
+          background: #fff;
+          li {
+            position: relative;
+            @include reset-elNav(43px);
+            width: 520px;
+            margin: 0 20px;
+            padding: 0 !important;
+            font-weight: 400;
+            &::after {
+              content: '';
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              width: 100%;
+              height: 1px;
+              background: #e0e0e0;
+            }
+            &:last-of-type {
+              &::after {
+                display: none;
+              }
+            }
+            p {
+              float: left;
+              width: 440px;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              font-size: 14px;
+            }
+            span {
+              float: right;
+              width: 80px;
+              line-height: 43px;
+              font-size: 14px;
+              color: $Introduction;
+            }
+          }
+        }
+      }
+      &:last-of-type {
+        float: right;
+        ul {
+          background: #fff;
+          li {
+            position: relative;
+            @include reset-elNav(165px);
+            margin: 0 20px;
+            padding: 20px 0 !important;
+            width: 520px;
+            img {
+              float: left;
+              width: 200px;
+              height: 125px;
+            }
+            div {
+              float: right;
+              width: 300px;
+              height: 125px;
+              h5 {
+                font-size: 16px;
+                line-height: 1;
+                height: 22px + 17px;
+                color: $mainColor;
+                span {
+                  font-size: 12px;
+                  color: $Introduction;
+                }
+              }
+              p {
+                width: 100%;
+                height: 60px;
+                overflow: hidden;
+                font-size: 14px;
+                color: $mainColor;
+                line-height: 1.5;
+                @include text-overflow();
+              }
+              & > span {
+                position: absolute;
+                height: 14px;
+                bottom: 20px;
+                right: 20px;
+                color: $viceColor;
+                line-height: 1;
+              }
+            }
+            &::after {
+              content: '';
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              width: 100%;
+              height: 1px;
+              background: #e0e0e0;
+            }
+            &:last-of-type {
+              &::after {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .Cooperation {
+    margin-bottom: 30px;
+    display: flex;
+    img {
+      flex: 1;
+      width: 270px;
+      height: 80px;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

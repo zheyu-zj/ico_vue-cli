@@ -1,0 +1,69 @@
+@import '../../assets/sass/components/variables';
+@import '../../assets/sass/components/mixin';
+
+.selectedWrap {
+  .el-dialog--small {
+    width: 480px;
+    padding: 10px 20px 15px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    & > div > form {
+      & > p {
+        span {
+          color: $viceColor;
+        }
+        a {
+          color: $viceColor;
+          &:hover {
+            color: $masterColor;
+          }
+        }
+      }
+    }
+  }
+  .el-form-item__label {
+    color: $mainColor;
+    font-weight: 400;
+  }
+  .el-input__inner {
+    font-size: smaller;
+  }
+}
+
+.selectedBox {
+  .el-form-item__content {
+    display: flex;
+    .selectedUid {
+      width: 50px;
+      margin-top: 7px;
+    }
+    .uidInput {
+      flex: 1;
+      margin-left: 5%;
+    }
+  }
+}
+
+.selectWrap {
+  .el-form-item__content {
+    display: flex;
+    .el-select {
+      width: 100px;
+    }
+    p {
+      flex: 1;
+      text-align: left;
+      text-indent: 20px;
+      span {
+        color: $viceColor;
+      }
+      a {
+        float: right;
+        color: $viceColor;
+        &:hover {
+          color: $masterColor;
+        }
+      }
+    }
+  }
+}

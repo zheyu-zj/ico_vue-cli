@@ -1,0 +1,66 @@
+@import '../../../sass/components/variables';
+@import '../../../sass/components/mixin';
+
+#registerMain {
+  .registerWrap {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 480px;
+    height: 540px;
+    box-sizing: border-box;
+    padding: 0 40px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 25px 0 rgba(0, 0, 0, 0.26);
+    h2 {
+      width: 100%;
+      height: 78px;
+      line-height: 78px;
+      font-size: 20px;
+      text-align: center;
+      font-weight: 400;
+    }
+    label {
+      width: 100%;
+      height: 36px + 20px;
+      @include prompt();
+      @include inputCoin();
+      &.checked {
+        height: 47px;
+        line-height: 1;
+        &>label{
+          display: inline;
+        }
+        span {
+          font-size: 12px;
+          a {
+            color: $viceColor;
+          }
+        }
+        p {
+          position: absolute;
+          right:2px;
+          top:2px;
+          text-align: right;
+          width: 120px;
+          line-height:15px;
+          a{
+            color: $viceColor;
+          }
+        }
+      }
+    }
+    &>button {
+      width: 100%;
+      @include masterButton()
+    }
+    p {
+      width: 100%;
+      line-height: 37px;
+      text-align: center;
+      color: $Introduction;
+    }
+  }
+}

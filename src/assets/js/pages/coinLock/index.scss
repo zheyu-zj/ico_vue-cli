@@ -1,0 +1,68 @@
+@import '../../../sass/components/variables';
+@import '../../../sass/components/mixin';
+
+#coinLockMain {
+  @include Width();
+  padding: 30px 50px;
+  margin: 30px auto;
+  box-sizing: border-box;
+  background: #ffffff;
+  h2 {
+    font-size: 36px;
+    color: #414188;
+    height: 70px;
+    line-height: 1;
+    border-bottom: 1px solid #e0e0e0;
+    font-weight: 400;
+  }
+  .bg-coinLock {
+    width: 347px;
+    height: 386px;
+    margin-left: 75px;
+  }
+  h4 {
+    margin: 104px 0 16px;
+    font-size: 16px;
+    line-height: 24px;
+    text-indent: 6px;
+    border-left: 4px solid $masterColor;
+    font-weight: 400;
+  }
+  .coinLock-box {
+    padding: 60px 0;
+    text-align: center;
+  }
+  .bg-coinLock-ms {
+    display: inline-block;
+    width: 202px;
+    height: 202px;
+  }
+  .bg-coinLock-st {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+  }
+  p {
+    &.coinLock_p {
+      padding-top: 10px;
+      border-top: 1px solid #e0e0e0;
+      font-size: 14px;
+      line-height: 21px;
+      text-indent: 2em;
+      font-weight: 400;
+    }
+    &.coinLock-ms {
+      display: inline-block;
+      margin-top: 20px;
+      font-size: 24px;
+      color: $masterColor;
+      font-weight: 400;
+    }
+    &.coinLock-st {
+      display: inline-block;
+      margin-top: 6px;
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+}
